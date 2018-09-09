@@ -1,7 +1,7 @@
 package token
 
 import (
-	"fmt"
+	//"fmt"
 )
 
 type TokenType string
@@ -64,7 +64,7 @@ var keywords = map[string]TokenType{
 }
 
 func LookupIdent(ident string) TokenType {
-	fmt.Println("Lookupident",ident)
+	//fmt.Println("Lookupident",ident)
 	if tok, ok := keywords[ident]; ok {
 		return tok
 	}
